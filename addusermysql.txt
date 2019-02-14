@@ -1,0 +1,5 @@
+create user 'adss-tsa'@'10.1.2.36' IDENTIFIED BY 'password';
+drop database adsstsa;
+create database adsstsa;
+grant all privileges on adsstsa.* to 'adss-tsa'@'10.1.2.36';
+flush privileges;
